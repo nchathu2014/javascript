@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Dynamic Typing</h1>
+		<script>
+		
+			var myVar="My Name is Nuwan"; //string type
+			console.log(typeof myVar)
+
+			myVar=1.5;  //number type
+			console.log(typeof myVar);
+
+
+			/*six types
+				- String
+				- Number
+				- Bool
+				- Object
+				- Null
+				- Undefined
+			*/
+
+			//Number type (floating,decimal)
+
+			var dec = 10;
+			var oct = 012;
+			var hex = 0xA;
+			var float = 1.23;
+			var exp = 3e2;
+
+			console.log("==== Automatic type conversion ====")
+			console.log("my number : "+dec)
+			console.log("my number : "+oct)
+			console.log("my number : "+hex)
+			console.log("my number : "+float)
+			console.log("my number : "+exp)
+
+			//bool type
+			console.log("==== Bool Type ====")
+			var isRain=true;
+			console.log("Is Rain ? " +isRain)
+
+			//undefined type
+
+			console.log("==== undefined type ====")
+			var myAge;
+			console.log(myAge) //defined and not initialized
+
+
+			//console.log(myAgeNewVar); // not defined in the context
+
+			//A good way
+			/*try{
+				console.log(myAgeNewVar); // not defined in the context
+			}catch(e){
+				console.log("ERROR"); // not defined in the context
+			}*/
+
+			//Null type
+
+			console.log("==== Null type ====")
+
+			var myValue = null; // object with NO reference
+			console.log(typeof myValue)
+
+			console.log("In boolen context : "+!myValue);
+			console.log("In numeric context : "+2*myValue);
+
+			var myUndefinedTest;
+			console.log("In boolen context : "+!myUndefinedTest);
+			console.log("In numeric context : "+2*myUndefinedTest);
+		
+
+		</script>
+	</body>
+</html>

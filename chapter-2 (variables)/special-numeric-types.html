@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Special Numeric Types</h1>
+		<script>
+		
+			var sp1 = (1/0);
+			var sp2 =  (-1/0);
+			var sp3 = (0/0);
+			var sp3_1 = "hi"*3;
+
+			console.log("Special Type 1 : "+sp1);
+			console.log("Special Type 2 : "+sp2);
+			console.log("Special Type 3 : "+sp3);
+		
+			console.log("Special Type 3_1 : "+sp3_1);
+			console.log("Identifiying 1: "+ (sp3_1 == NaN));	
+			console.log("Identifiying 2: "+ isNaN(sp3_1));	
+
+		</script>
+	</body>
+</html>

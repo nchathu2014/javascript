@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Varadic Function with arguments object</h1>
+		<script>
+			
+		combine(1,2,3)
+
+		function combine(){
+
+			var result="";
+
+			for(var i=0;i<arguments.length;i++){
+				result = result + arguments[i]
+			}
+
+			console.log("Combine Result : "+result)
+
+		}
+
+
+
+		</script>
+				
+	</body>
+</html>
