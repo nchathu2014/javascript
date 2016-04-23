@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Constructor function to create an object</h1>
+		<script>
+			
+			function Student(){
+
+				this.fname;
+				this.lname;
+
+				this.setFName=function(fname){
+					this.fname=fname;
+				},
+				this.setLName=function(lname){
+					this.lname=lname;
+				},
+				this.getFullName=function(){
+					return this.fname+" "+this.lname;
+				}
+			}
+
+			var std1 = new Student();
+
+			std1.setFName("Nuwan");
+			std1.setLName("Chathuranga");
+			console.log(std1.getFullName());
+			
+			var std2 = new Student();
+			
+			std2.setFName("Dasuni");
+			std2.setLName("Nadeera");
+			console.log(std2.getFullName());
+			//console.log(std1+" "+std2)
+
+		</script>
+				
+	</body>
+</html>

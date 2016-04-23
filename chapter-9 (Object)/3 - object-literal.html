@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Object Literal to create an object</h1>
+		<script>
+			
+			var student={
+				fname:"Nuwan",
+				lname:"Dasuni",
+				getFullName:function(){
+					return this.fname+" "+this.lname
+				},
+				setAge:function(age){
+					this.age=age;
+				}
+			}
+			student.setAge(30);
+			console.log("I am "+student.getFullName()+" and my age is : "+student.age)
+
+		</script>
+				
+	</body>
+</html>

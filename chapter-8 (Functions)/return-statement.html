@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Return Statement</h1>
+		<script>
+			
+		//return statementn is use to retuen a value to the calling place and exit from  the function
+
+		//Example of exit from a function
+		testReturn(2);
+
+		function testReturn(exitCode){
+			console.log("Inside testReturn() 1 ");
+			if(exitCode==2){
+				return;
+			}		
+			console.log("Inside testReturn() 2 ");
+		}
+
+		console.log("Outside from testReturn()");
+
+		//Example of returing values from a function
+
+		printValue(getSum(3,3));
+
+		function printValue(sum){
+			console.log("Sum is : "+sum);
+		}
+
+		function getSum(a,b){
+			return a+b;
+		}
+
+		</script>
+				
+	</body>
+</html>

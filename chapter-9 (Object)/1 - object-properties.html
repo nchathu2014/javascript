@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Object Properties</h1>
+		<script>
+			console.log("1-Create a student object");
+			var student = new Object();
+			console.log(student);
+
+			console.log("2-Create a student object properties");
+			student.id=100;
+			student.name="Nuwan";
+			student["country"]="Sri Lanka" // alternative way to declare a object propery
+			console.log(student);
+
+			console.log("3- Remove property");
+			delete student.name;
+			console.log(student);
+
+			console.log("4- Check the object properties");
+			console.log("id" in student);
+			console.log("name" in student);
+			console.log("country" in student);
+
+
+
+
+		</script>
+				
+	</body>
+</html>

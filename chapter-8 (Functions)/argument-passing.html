@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Argument Passing</h1>
+		<script>
+			
+	     var fruits=[];
+	     addFruits(fruits);
+	     displayFruits(fruits);
+
+	     function addFruits(fruitsRef){
+	     	fruitsRef.push("Red Apple");
+	     	fruitsRef.push("Banana");
+	     	fruitsRef.push("Mango");
+
+	     	setTimeout(function(){
+	     		fruitsRef.push("Green Apple");
+	     		console.log("---------------List Updated ----------------")
+	     		displayFruits(fruits);
+	     	},3000)
+
+	     	setTimeout(function(){
+	     		fruitsRef.push("Straw Berry");
+	     		console.log("---------------List Updated ----------------")
+	     		displayFruits(fruits);
+	     	},6000)
+	     }
+		
+	     function displayFruits(fruits){
+	     	for(var fruit in fruits){
+	     		
+	     		console.log(fruits[fruit]);
+	     		
+	     	}
+	     }
+		</script>
+				
+	</body>
+</html>

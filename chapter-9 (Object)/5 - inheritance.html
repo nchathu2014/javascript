@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Object Inheritance</h1>
+		<script>
+			//create a Student class and inherit the functions using prototypical inheritance
+			function Student(){
+				this.fname="Nuwan";
+			}
+
+			Student.prototype.setFName = function(fname){
+				this.fname=fname;
+			}
+
+			var std = new Student();
+			std.setFName("Sponge Bob")
+			console.log(std)
+
+			//Another example
+
+			//contructor function for Student
+			function Parent(){
+				this.fname="Nuwan";
+				this.lname="Dasuni";
+			}
+
+			//contructor function for Child
+			function Child(){}
+
+			var parent = new Parent();
+			Child.prototype=parent; //prototypically inherit the parent
+
+			Child.prototype.getFullName = function(){
+				return this.fname+" "+this.lname;
+			}
+
+			var child = new Child();
+			console.log(child);
+			console.log("I am "+child.getFullName());
+
+			// Type checking
+			console.log("=========== type checking ==============");
+
+			console.log(Child.prototype === child.__proto__);
+			console.log(child instanceof Child);
+			console.log(child instanceof Parent);
+			console.log(child instanceof Object);
+			console.log(parent instanceof Object);
+
+		</script>
+				
+	</body>
+</html>

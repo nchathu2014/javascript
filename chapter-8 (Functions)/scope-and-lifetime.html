@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Scope and Lifetime</h1>
+		<script>
+		
+
+		// This scope life time valid for function blocks
+
+		 var testVar = "I am global variable"; 
+		 var globalVar = 12;
+
+		 function scopeTest(){
+		 	var testVar = "I am local variable";
+		 	console.log(testVar)
+		 	console.log(globalVar)
+		 	globalVar=16;
+		 }
+
+		 scopeTest();
+
+		 console.log(testVar)
+
+		 console.log(globalVar)
+
+		 //In logical code blocks above life scope is not valid
+		 console.log("==== Inside a logical code block ====");
+		 var x=true
+		 if(x){
+		 	var y = "I am local y variable"
+		 }
+		 console.log(y); // visible outside the block but in function blocks that is not happend
+
+
+		//alternative way of creating a global variable
+		function alernativeFn(){
+			alternativeVar = "I am a local varibale in alternative way"
+		}
+		
+		alernativeFn();
+		console.log(alternativeVar)
+
+
+		</script>
+				
+	</body>
+</html>

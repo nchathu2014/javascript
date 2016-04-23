@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+	</head>
+	<!--check the javascript compatibility-->
+	<noscript>
+		Please enable JavaScript for full functionality of this site.
+	</noscript>
+	<body>
+		<h1>Object Create</h1>
+		<script>
+			
+			function Parent(){
+				this.fname="Nuwan"
+			}
+
+			var parent = new Parent();
+			var child = Object.create(parent);
+
+			console.log(parent.fname);
+
+			console.log(child.fname);
+
+		</script>
+				
+	</body>
+</html>
